@@ -159,7 +159,29 @@ background-color:#5D0580;
         <!-- Main Area Content Area -->
     <div id="main">
             <div id="content">
-            
+            <?php
+                    $PagesDirectory = 'pages';
+                    if(!empty($_GET['q'])){
+                        $PageName = $_GET['q'];
+
+                       // echo $PageName; // for checking wether query parameter is working or not 
+                        $PagesFile = scandir($PagesDirectory , 0);
+                       
+                       unset($PagesFile[0], $PagesFile[1]); // to remove . and ..
+                       // print_r($PagesFile); // to show the directory index in array
+
+                       if(in_array($PageName. '.php', $PagesFile)){
+                        include($PagesDirectory. '/' .$PageName.'.php');
+                       }else{
+                        echo '<h1 id="request"> You are lost...</h1>';
+                        
+                        echo '<img src="images/Lost.gif" width="680px" height="430px">';
+                        echo '<h2>Sorry Page Not Found.</h2>';
+                       }
+                    }else{
+                        include($PagesDirectory.'/Home.php');
+                    } 
+                 ?>
                 
 
 
