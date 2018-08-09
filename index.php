@@ -146,10 +146,10 @@ background-color:#5D0580;
         </div>
         <div id="menu">
             <ul>
-                <li><a href="Index.php">Home</a></li>
-                <li><a href="Index.php?q=About" >About Us </a></li>
-                <li><a href="Index.php?q=Contact">Contact Us</a></li>
-		        <li><a href="Index.php?q=ShareWithFriend">Tell a friend</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="index.php?q=about" >About Us </a></li>
+                <li><a href="index.php?q=contact">Contact Us</a></li>
+		        <li><a href="index.php?q=sharewithfriend">Tell a friend</a></li>
                 <li><a href="">Coming Soon</a></li>
 		        <li><a href="">Forum</a></li>
             </ul>
