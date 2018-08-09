@@ -179,7 +179,7 @@ background-color:#5D0580;
                         echo '<h2>Sorry Page Not Found.</h2>';
                        }
                     }else{
-                        include($PagesDirectory.'/Home.php');
+                        include($PagesDirectory.'/home.php');
                     } 
                  ?>
                 
